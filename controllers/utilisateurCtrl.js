@@ -2,7 +2,6 @@ const Utilisateur = require('../models/utilisateur');
 const Role = require('../models/role');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const utilisateur = require('../models/utilisateur');
 
 exports.signUp = (req, res, next) => {
     Role.findById({ _id: req.body.Role})
